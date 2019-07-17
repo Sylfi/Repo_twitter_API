@@ -3,7 +3,7 @@ require 'twitter'
 
 require 'dotenv'# Appelle la gem Dotenv
 
-Dotenv.load
+Dotenv.load('../.env')
 
 # quelques lignes qui appellent les clés d'API de ton fichier .env
 client = Twitter::REST::Client.new do |config|
